@@ -1,0 +1,12 @@
+{
+  "name": "navigation-tutorial",
+  "displayName": "navigation-tutorial",
+  "expo": {
+    "name": "navigation-tutorial",
+    "slug": "navigation-tutorial",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
