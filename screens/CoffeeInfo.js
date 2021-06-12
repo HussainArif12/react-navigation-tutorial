@@ -8,10 +8,10 @@ export default function CoffeeInfo({ route }) {
   const { id } = route.params;
 
   const fetchData = async () => {
-    const data = await fetch(`https://api.sampleapis.com/coffee/hot/${id}`);
-    const resp = await data.json();
+    const resp = await fetch(`https://api.sampleapis.com/coffee/hot/${id}`);
+    const data = await resp.json();
     console.log(resp.title);
-    setData(resp);
+    setData(data);
   };
 
   useEffect(() => {

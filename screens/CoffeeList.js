@@ -6,9 +6,9 @@ export default function CoffeeList({ navigation }) {
   const [data, setData] = useState([]);
 
   const fetchData = async () => {
-    const data = await fetch("https://api.sampleapis.com/coffee/hot");
-    const resp = await data.json();
-    setData(resp);
+    const resp = await fetch("https://api.sampleapis.com/coffee/hot");
+    const data = await data.json();
+    setData(data);
   };
 
   useEffect(() => {
